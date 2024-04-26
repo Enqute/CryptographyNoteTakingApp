@@ -1,0 +1,21 @@
+server:
+  port: 8012
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  application:
+    name: notetakingappapi
+  jpa:
+    hibernate:
+      ddl-auto: update
+#      ddl-auto: create-drop
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      fail-on-empty: false
+    properties:
+      hibernate: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/notetakingapp?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: notetaking
+    password: Passwrd#123
